@@ -77,63 +77,71 @@
           <button class="close-button">&times;</button>
         </div>
 
-        <div class="modal-body">
-          <form id="form" action="">
-            <div class="input-group">
-              <input name="title" type="text" placeholder="Task Title*" />
-            </div>
+     <div class="modal-body">
+  <form id="form" action="">
+    <div class="input-group">
+      <label for="title">Task Title<span style="color: red;">*</span></label>
+      <input id="title" name="title" type="text" placeholder="Task Title*" />
+    </div>
 
-            <div class="input-group">
-              <input name="startTime" type="time" placeholder="Start Time" />
-            </div>
+    <div class="input-group">
+      <label for="startTime">Start Time<span style="color: red;">*</span></label>
+      <input id="startTime" name="startTime" type="time" placeholder="Start Time" />
+    </div>
 
-            <div class="input-group">
-              <input name="endTime" type="time" placeholder="End Time" />
-            </div>
+    <div class="input-group">
+      <label for="endTime">End Time<span style="color: red;">*</span></label>
+      <input id="endTime" name="endTime" type="time" placeholder="End Time" />
+    </div>
 
-            <div class="input-group">
-              <input name="DueDate" type="date" placeholder="Due Date" />
-            </div>
+    <div class="input-group">
+      <label for="DueDate">Due Date<span style="color: red;">*</span></label>
+      <input id="DueDate" name="DueDate" type="date" placeholder="Due Date" />
+    </div>
 
-             <div class="input-group">
-                <select name="priority">
-                    <option value="Medium">Medium</option>
-                    <option value="Normal">Normal</option>
-                    <option value="Easy">Easy</option>
-                </select>
-            </div>
+    <div class="input-group">
+      <label for="priority">Priority<span style="color: red;">*</span></label>
+      <select id="priority" name="priority">
+        <option value="Medium">Medium</option>
+        <option value="Normal">Normal</option>
+        <option value="Easy">Easy</option>
+      </select>
+    </div>
 
-           <div class="input-group">
-                <select name="category">
-                    <option value="Team Meeting">Team Meeting</option>
-                    <option value="Work on Branding">Work on Branding</option>
-                    <option value="Make a Report for client">Make a Report for client</option>
-                    <option value="Create a planer">Create a planer</option>
-                    <option value="Create Treatment Plan">Create Treatment Plan</option>
-                </select>
-            </div>
+    <div class="input-group">
+      <label for="category">Category<span style="color: red;">*</span></label>
+      <select id="category" name="category">
+        <option value="Team Meeting">Team Meeting</option>
+        <option value="Work on Branding">Work on Branding</option>
+        <option value="Make a Report for client">Make a Report for client</option>
+        <option value="Create a planer">Create a planer</option>
+        <option value="Create Treatment Plan">Create Treatment Plan</option>
+      </select>
+    </div>
 
+    <div class="input-group">
+      <label for="cardColor">Card Color<span style="color: red;">*</span></label>
+      <select id="cardColor" name="cardColor">
+        <option value="blue">Blue</option>
+        <option value="purple">Purple</option>
+        <option value="yellow">Yellow</option>
+        <option value="pink">Pink</option>
+        <option value="green">Green</option>
+      </select>
+    </div>
 
-            <div class="input-group">
-               <select name="cardColor">
-                    <option value="blue">Blue</option>
-                    <option value="purple">Purple</option>
-                    <option value="yellow">Yellow</option>
-                    <option value="pink">Pink</option>
-                    <option value="green">Green</option>
-                </select>
-            </div>
+    <div class="input-group full-width">
+      <label for="description">Description</label>
+      <textarea id="description" name="description" placeholder="Description"></textarea>
+    </div>
 
-            <div class="input-group full-width">
-              <textarea name="description" placeholder="Description"></textarea>
-            </div>
+    <div class="modal-btn">
+      <button type="button" class="cancel-button">Cancel</button>
+      <button type="submit" class="add-new-button">Add New</button>
+    </div>
+  </form>
+</div>
 
-            <div class="modal-btn">
-                <button type="button" class="cancel-button">Cancel</button>
-                <button type="submit" class="add-new-button">Add New</button>
-            </div>
-          </form>
-        </div>
 
       </div>
     </div>

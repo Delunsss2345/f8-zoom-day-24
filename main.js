@@ -8,9 +8,14 @@ const form = document.getElementById('form');
 const todoMain = document.querySelector('.task-grid') ; 
 const tabList = document.querySelectorAll('.tab-list .tab-button') ;
 const search = document.querySelector('.search-input') ; 
+const backDrop = document.querySelector('.modal-backdrop') ;
 let todoTasks = JSON.parse(localStorage.getItem('todos')) || [] ; 
 const toggleButtons = [addBtn, closeBtn, cancelBtn];
 
+
+backDrop.onclick = () => {
+     modal.classList.toggle('show');
+}
 
 const handleToggleModal = (btn) => {
     modal.classList.toggle('show');
@@ -213,6 +218,7 @@ function validateField(newTask) {
 
 //Hàm render hổ trợ truyền mảng
 function renderTask(todos) {    
+    if(todos.length === 0) return todoMain.textContent = 'Không có task nào' ;
     todoMain.innerHTML = "" ; 
     todos.map((task , index) => {
         const taskCard = document.createElement('div');
